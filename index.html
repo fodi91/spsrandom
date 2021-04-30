@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Paper Stones Scissors 2 player game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="player player--0 player-active">
+        <h1 class="player0namedisplay">Player1</h1>
+        <img src="paper.png" alt="item" width="150px" height="150px" class="picture0 img" />
+        <div class="score scoreP0">10</div>
+        <button class="btn player--0btn">Generálás</button>
+      </section>
+      <section class="player player--1">
+        <h1 class="player1namedisplay">Player2</h1>
+        <img src="paper.png" alt="item" width="150px" height="150px" class="picture1 img" />
+        <div class="score scoreP1">10</div>
+        <button class="btn player--1btn">Generálás</button>
+      </section>
+    </div>
+    <button class="btn resetBtn">Új játék</button>
+    <div class="wintext"></div>
+    <button class="btn settingsBtn">Beállítások</button>
+    <div class="wintext"></div>
+    <div class="overlay hidden"></div>
+    <div class="settings displaynone">
+      <div class="close">&times;</div>
+      <label for="needtowin">Győzelemhez szükséges körök száma:</label><br />
+      <input type="number" id="needtowin" /><br />
+      <label for="player0name">1. játékos neve:</label><br />
+      <input type="text" id="player0name" /><br />
+      <label for="player1name">2. játékos neve:</label><br />
+      <input type="text" id="player1name" /><br />
+      <button class="btn settingsmodalbtn">Beállítás</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
